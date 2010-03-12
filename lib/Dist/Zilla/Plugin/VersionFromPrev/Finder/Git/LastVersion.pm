@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion;
-our $VERSION = '0.01';
+our $VERSION = '0.02';
 
 use 5.010;
 use Moose;

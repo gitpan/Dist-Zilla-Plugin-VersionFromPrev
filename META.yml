@@ -25,4 +25,4 @@ resources:
   homepage: http://search.cpan.org/dist/Dist-Zilla-Plugin-VersionFromPrev/
   license: http://dev.perl.org/licenses/
   repository: http://github.com/avar/dist-zilla-plugin-versionfromprev
-version: 0.01
+version: 0.02
