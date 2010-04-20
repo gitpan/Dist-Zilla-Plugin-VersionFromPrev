@@ -1,5 +1,7 @@
 package Dist::Zilla::Plugin::VersionFromPrev;
-our $VERSION = '0.02';
+BEGIN {
+  $Dist::Zilla::Plugin::VersionFromPrev::VERSION = '0.03';
+}
 
 use 5.010;
 use Moose;
@@ -35,7 +37,7 @@ sub provide_version {
 
     my $last_version = $version_finder_obj->last_version($self);
 
-    return $version_style_obj->bump($self, $last_version);
+    return $ENV{BUMP_VERSION_TO} // $version_style_obj->bump($self, $last_version);
 }
 
 __PACKAGE__->meta->make_immutable;
@@ -106,6 +108,25 @@ by default.
 The short name of the version provider plugin you want to
 use. L<"Git::LastVersion"|Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion>.
 by default.
+
+=head1 Environment
+
+This module understands the following environmental variables:
+
+=over
+
+=item * C<DONT_BUMP_VERSION>
+
+If set the version won't be bumped at all. Useful for producing a
+tarball for your last release.
+
+=item * C<BUMP_VERSION_TO>
+
+Bump the version to a given version,
+e.g. C<DONT_BUMP_VERSION=1.00>. Useful if you want to skip a version
+or go from e.g. C<0.10> to C<1.00>.
+
+=back
 
 =head1 BUGS
 

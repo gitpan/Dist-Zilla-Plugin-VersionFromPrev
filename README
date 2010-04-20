@@ -47,6 +47,19 @@ ATTRIBUTES
     The short name of the version provider plugin you want to use.
     "Git::LastVersion". by default.
 
+Environment
+    This module understands the following environmental variables:
+
+    *   "DONT_BUMP_VERSION"
+
+        If set the version won't be bumped at all. Useful for producing a
+        tarball for your last release.
+
+    *   "BUMP_VERSION_TO"
+
+        Bump the version to a given version, e.g. "DONT_BUMP_VERSION=1.00".
+        Useful if you want to skip a version or go from e.g. 0.10 to 1.00.
+
 BUGS
     Yes, and probably some that I don't know about. It works for me, if it
     doesn't for you fork it on GitHub & patch it & release it.

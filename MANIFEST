@@ -3,7 +3,6 @@ LICENSE
 MANIFEST
 META.json
 META.yml
-Makefile.PL
 README
 dist.ini
 lib/Dist/Zilla/Plugin/VersionFromPrev.pm
@@ -11,3 +10,4 @@ lib/Dist/Zilla/Plugin/VersionFromPrev/Finder/Git/LastVersion.pm
 lib/Dist/Zilla/Plugin/VersionFromPrev/Style/Classic.pm
 t/00-compile.t
 t/classic.t
+t/release-pod-syntax.t
