@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion;
 BEGIN {
-  $Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion::VERSION = '0.03';
+  $Dist::Zilla::Plugin::VersionFromPrev::Finder::Git::LastVersion::VERSION = '0.04';
 }
 
 use 5.010;

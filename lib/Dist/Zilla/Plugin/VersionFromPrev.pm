@@ -1,6 +1,6 @@
 package Dist::Zilla::Plugin::VersionFromPrev;
 BEGIN {
-  $Dist::Zilla::Plugin::VersionFromPrev::VERSION = '0.03';
+  $Dist::Zilla::Plugin::VersionFromPrev::VERSION = '0.04';
 }
 
 use 5.010;

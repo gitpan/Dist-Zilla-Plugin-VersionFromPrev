@@ -11,7 +11,7 @@
    "configure_requires" : {
       "ExtUtils::MakeMaker" : "6.31"
    },
-   "generated_by" : "Dist::Zilla version 2.101040",
+   "generated_by" : "Dist::Zilla version 2.101170",
    "license" : "perl",
    "meta-spec" : {
       "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html",
@@ -36,6 +36,6 @@
       "license" : "http://dev.perl.org/licenses/",
       "repository" : "http://github.com/avar/dist-zilla-plugin-versionfromprev"
    },
-   "version" : "0.03"
+   "version" : "0.04"
 }
 
