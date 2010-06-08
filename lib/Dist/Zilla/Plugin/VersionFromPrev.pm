@@ -1,6 +1,9 @@
 package Dist::Zilla::Plugin::VersionFromPrev;
 BEGIN {
-  $Dist::Zilla::Plugin::VersionFromPrev::VERSION = '0.04';
+  $Dist::Zilla::Plugin::VersionFromPrev::AUTHORITY = 'cpan:AVAR';
+}
+BEGIN {
+  $Dist::Zilla::Plugin::VersionFromPrev::VERSION = '0.05';
 }
 
 use 5.010;

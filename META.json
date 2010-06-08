@@ -3,19 +3,12 @@
    "author" : [
       "\u00c3\u0086var Arnfj\u00c3\u00b6r\u00c3\u00b0 Bjarmason <avar@cpan.org>"
    ],
-   "build_requires" : {
-      "File::Find" : "0",
-      "File::Temp" : "0",
-      "Test::More" : "0"
-   },
-   "configure_requires" : {
-      "ExtUtils::MakeMaker" : "6.31"
-   },
-   "generated_by" : "Dist::Zilla version 2.101170",
-   "license" : "perl",
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 3.101520",
+   "license" : "perl_5",
    "meta-spec" : {
-      "url" : "http://module-build.sourceforge.net/META-spec-v1.4.html",
-      "version" : 1.4
+      "url" : "http://github.com/dagolden/cpan-meta/",
+      "version" : 2
    },
    "name" : "Dist-Zilla-Plugin-VersionFromPrev",
    "no_index" : {
@@ -23,19 +16,43 @@
          "t"
       ]
    },
-   "recommends" : {},
-   "requires" : {
-      "Dist::Zilla::Role::VersionProvider" : "0",
-      "Moose" : "0",
-      "perl" : "5.010"
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "ExtUtils::MakeMaker" : "6.31"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "Dist::Zilla::Role::VersionProvider" : "0",
+            "Moose" : "0",
+            "perl" : "5.010"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "File::Find" : "0",
+            "File::Temp" : "0",
+            "Test::More" : "0"
+         }
+      }
    },
+   "release_status" : "stable",
    "resources" : {
       "Ratings" : "http://cpanratings.perl.org/d/Dist-Zilla-Plugin-VersionFromPrev",
-      "bugtracker" : "http://github.com/avar/dist-zilla-plugin-versionfromprev/issues",
+      "bugtracker" : {
+         "mailto" : "bug-Dist-Zilla-Plugin-VersionFromPrev@rt.cpan.org",
+         "url" : "https://rt.cpan.org/Public/Dist/Display.html?Name=Dist-Zilla-Plugin-VersionFromPrev"
+      },
       "homepage" : "http://search.cpan.org/dist/Dist-Zilla-Plugin-VersionFromPrev/",
       "license" : "http://dev.perl.org/licenses/",
-      "repository" : "http://github.com/avar/dist-zilla-plugin-versionfromprev"
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/avar/dist-zilla-plugin-versionfromprev.git",
+         "web" : "http://github.com/avar/dist-zilla-plugin-versionfromprev"
+      }
    },
-   "version" : "0.04"
+   "version" : "0.05",
+   "x_authority" : "cpan:AVAR"
 }
 

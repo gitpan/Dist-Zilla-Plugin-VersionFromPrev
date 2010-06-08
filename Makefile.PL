@@ -9,29 +9,29 @@ use ExtUtils::MakeMaker 6.31;
 
 
 my %WriteMakefileArgs = (
-                       'test' => {
-                                   'TESTS' => 't/*.t'
-                                 },
-                       'NAME' => 'Dist::Zilla::Plugin::VersionFromPrev',
-                       'DISTNAME' => 'Dist-Zilla-Plugin-VersionFromPrev',
-                       'CONFIGURE_REQUIRES' => {
-                                                 'ExtUtils::MakeMaker' => '6.31'
-                                               },
-                       'AUTHOR' => 'Ævar Arnfjörð Bjarmason <avar@cpan.org>',
-                       'BUILD_REQUIRES' => {
-                                             'Test::More' => '0',
-                                             'File::Find' => '0',
-                                             'File::Temp' => '0'
-                                           },
-                       'ABSTRACT' => 'Bump your version internally for use at release time',
-                       'EXE_FILES' => [],
-                       'VERSION' => '0.04',
-                       'PREREQ_PM' => {
-                                        'Dist::Zilla::Role::VersionProvider' => '0',
-                                        'Moose' => '0'
-                                      },
-                       'LICENSE' => 'perl'
-                     );
+  'ABSTRACT' => 'Bump your version internally for use at release time',
+  'AUTHOR' => 'Ævar Arnfjörð Bjarmason <avar@cpan.org>',
+  'BUILD_REQUIRES' => {
+    'File::Find' => '0',
+    'File::Temp' => '0',
+    'Test::More' => '0'
+  },
+  'CONFIGURE_REQUIRES' => {
+    'ExtUtils::MakeMaker' => '6.31'
+  },
+  'DISTNAME' => 'Dist-Zilla-Plugin-VersionFromPrev',
+  'EXE_FILES' => [],
+  'LICENSE' => 'perl',
+  'NAME' => 'Dist::Zilla::Plugin::VersionFromPrev',
+  'PREREQ_PM' => {
+    'Dist::Zilla::Role::VersionProvider' => '0',
+    'Moose' => '0'
+  },
+  'VERSION' => '0.05',
+  'test' => {
+    'TESTS' => 't/*.t'
+  }
+);
 
 
 unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
